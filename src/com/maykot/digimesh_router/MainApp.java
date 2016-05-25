@@ -39,7 +39,7 @@ public class MainApp {
 		new LogRecord();
 
 		deviceConfig = DeviceConfig.getInstance();
-		myDevice = OpenMyDevice.open(deviceConfig);
+		myDevice = OpenMyDevice.open(deviceConfig, myDevice);
 
 		// Registra listener para processar mensagens recebidas
 		RadioRouter.getInstance().addProcessMessageListener(new ProcessMessage());

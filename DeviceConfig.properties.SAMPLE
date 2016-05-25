@@ -1,5 +1,7 @@
 ##### COMMON SETTINGS #####
-XTendBaudRate = 115200
+#DeviceType = DigiMeshDevice
+DeviceType = ZigBeeDevice
+DeviceBaudRate = 115200
 RemoteNodeID = XTEND01
 TimeOutForSyncOperations = 10000
 
@@ -13,14 +15,14 @@ SubscribedTopic = maykot/#
 QoS = 2
 
 ##### WINDOWS SETTINGS #####
-#XTendPort = COM6
-#XTendPort = COM13
-#XTendPort = COM14
+#DevicePort = COM6
+#DevicePort = COM13
+#DevicePort = COM14
 
 # MAC OSX SETTINGS
-XTendPort = /dev/tty.usbserial
-#XTendPort = /dev/tty.usbserial-141
-#XTendPort = /dev/tty.usbserial-142
+DevicePort = /dev/tty.usbserial
+#DevicePort = /dev/tty.usbserial-141
+#DevicePort = /dev/tty.usbserial-142
 
 ##### LINUX SETTINGS #####
-#XTendPort = /dev/ttyUSB0
+#DevicePort = /dev/ttyUSB0
